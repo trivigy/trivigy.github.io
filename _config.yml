@@ -1,0 +1,209 @@
+title: "kovits.com"
+description: "BlogInn is a bold theme for the Jekyll blogging platform. Available for purchase at ThemeForest.net."
+
+baseurl:
+
+sass:
+  sass_dir: _sass
+
+url: "http://justgoodthemes.com"
+
+navigation:
+  - text: Home
+    url: /
+  - text: Blog
+    url: /blog/
+  - text: Archive
+    url: /archive/
+
+author:
+  name: Konstantin Itskov
+  email: costa at kovits com
+  address: New York, NY
+  biography: >-
+    Ever since I was young I have always been interested in science and technology.
+    At the age of nine my mother bought our first family computer and with it came
+    a whole new world of fascination. After receiving my first computer at the age
+    of nine, I taught myself how to take apart the hard drive and swap the memory
+    cards. By the time I was eleven, I had already upgraded my computer several
+    times by trading parts with other computer-savvy friends. I then attended a
+    specialized high school for computer science and I participated in an after-school
+    IT program. I taught myself everything from C++ and flash action script to
+    matrix and vector mathematics while learning Pascal, Assembler and html at
+    school. At the age of 15, I made my first server-client communication software
+    and started working on a 3-D game engine.\n
+
+    My life then took a turn and I was drafted into the Israeli military. After
+    serving for almost three and a half years I was finally discharged with honors
+    and was ready to conquer the world when, by sheer luck, I met my beautiful wife.
+    Following several years together of life in Israel, I then decided to follow my
+    dream of becoming a professional software engineer and, together with my wife,
+    move to New York city to pursue this goal. While attending school at Columbia University,
+    I started a tech startup with a friend and have then successfully grown it to
+    serve millions of HTTP requests a day and a company of over ten fulltime employees.
+    In the process, I never gave up on my dream of earning a degree in computer
+    science and eventually graduated magna cum laude, the second highest distinction
+    a student can get.
+
+skills:
+  - name: Rust
+    percent: 65
+  - name: Assembly
+    percent: 60
+  - name: TypeScript
+    percent: 90
+  - name: WebAssembly
+    percent: 85
+  - name: Go
+    percent: 99
+  - name: Python
+    percent: 95
+  - name: C / C++
+    percent: 80
+  - name: Git
+    percent: 99
+  - name: HTML
+    percent: 99
+  - name: Javascript
+    percent: 75
+  - name: CSS
+    percent: 85
+  - name: SCSS
+    percent: 70
+  - name: Linux
+    percent: 85
+  - name: Java
+    percent: 60
+  - name: ocaml
+    percent: 20
+  - name: JetBrains
+    percent: 90
+  - name: Nix
+    percent: 65
+  - name: MySQL
+    percent: 75
+  - name: Redis
+    percent: 80
+  - name: Postgres
+    percent: 90
+  - name: ElasticSearch
+    percent: 45
+  - name: Lua
+    percent: 30
+  - name: sqlite
+    percent: 65
+  - name: cayley
+    percent: 85
+  - name: etcd
+    percent: 60
+
+projects:
+  - name: multiset
+    description: Implementation of a thread safe multiset data structure.
+    link: https://github.com/trivigy/multiset
+  - name: set
+    description: Implementation of a thread safe set data structure.
+    link: https://github.com/trivigy/set
+  - name: oas
+    description: Golang OpenAPI Specification definitions.
+    link: https://github.com/trivigy/oas
+  - name: event
+    description: Implemention of python's threading.Event using golang primitives.
+    link: https://github.com/trivigy/event
+  - name: migrate
+    description: Idiomatic GO cluster release and database migration management.
+    link: https://github.com/trivigy/migrate
+  - name: gate
+    description: General purpose p2p peer discovery library and gate keeper application.
+    link: https://github.com/trivigy/gate
+  - name: squl
+    description: SQL query builder library using Go structs.
+    link: https://github.com/trivigy/squl
+  - name: revgcs
+    description: Reverse proxy for google cloud storage to allow secure static hosting.
+    link: https://github.com/trivigy/revgcs
+  - name: crypto-pool
+    description: C++ implementation of monero crypto mining pool for distributed miner orchestration.
+    link: https://github.com/trivigy/backend
+  - name: discord-resource
+    description: Concourse CI and discord integration plugin that allows concourse to push messages to discord.
+    link: https://github.com/trivigy/discord-resource
+  - name: frigg
+    description: Headless web browser library based on the CEF3.
+    link: https://github.com/trivigy/frigg
+  - name: audio-player
+    description: Sound equalization visualization module.
+    link: https://github.com/trivigy/audio-player
+
+jobs:
+  - company: Syncaide, Inc.
+    position: Founder & Chief Executive Officer
+    location: New York, NY
+    timeframe: 2018 - Present
+    description: >-
+      Founded early stage company concentrating on real-time streaming and
+      communication infrastructural technology. Working on peer to peer streaming
+      mechanisms allowing browsers a bidirectional communication with servers and
+      other browsers.
+  - company: DigiContract Intelligence LLC
+    position: Co-Founder & Chief Executive Officer
+    location: New York, NY
+    timeframe: 2018 - Present
+    description: >-
+      Joined an early stage startup concentrating on digitizing legal documents.
+      Leading research and development into a graph theory specializing in a
+      concept called math without numbers. Concentrating on establishing early
+      engineering processes as well as product design and development.
+  - company: FINDMINE Inc.
+    position: Co-Founder & Chief Technical Officer
+    location: New York, NY
+    timeframe: 2014 - 2018
+    description: >-
+      Cofounded a technology company growing the technology to millions of requests
+      a month. Worked on web technologies ranging from devops, systems engineering,
+      frontend development, etc. Managed a team of developers and coordinated work
+      driven by company goals.
+
+schools:
+  - company: Columbia University of City of New York
+    position: Bachelor of Computer Science
+    location: New York, NY
+    timeframe: 2014 - 2016
+    description: >-
+      Received Bachelor of Arts (BA) degree in Computer Science graduating Magna
+      Cum Laude. Was awarded dean's list achievement and was accepted to General
+      Studies honors society. Participated as part of the Columbia Association for
+      Computing Machinery club.
+  - company: City University of New York
+    position: Associate of Mathematics
+    location: New York, NY
+    timeframe: 2012 - 2014
+    description: >-
+      Completed Associate of Science (AS) degree in Mathematics. Graduated with
+      excellence and was accepted to Phi Theta Kappa Honor Society. At free time
+      participated in the Mathematics Team practices and competitions.
+  - company: Motorcycle Technician Institute
+    position: Motorcycle Mechanic Certificate
+    location: Israel
+    timeframe: 2007 - 2008
+    description: >-
+      Studied to perform mechanical repairs for scooters and motorcycles, ranging
+      from 50cc to 600cc; Certified to ensure road-safety and maintanence on
+      common models including Kawasaki, Suzuki, Yamaha, Vespa, Etc.
+  - company: Israeli Defense Force Medical School
+    position: Combat Medic Certificate
+    location: New York, NY
+    timeframe: 2003 - 2004
+    description: >-
+      As combat medic I was taught to provide all medical treatment to army
+      personnel, evaluate injuries and determine evacuation priority; evaluated
+      personnel to give medical approval prior to missions.
+
+paginate: 10
+paginate_path: '/blog/page:num/'
+plugins: [jekyll-paginate]
+
+permalink: pretty
+markdown: kramdown
+kramdown:
+  auto_ids: false

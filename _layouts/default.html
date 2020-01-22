@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{{ site.title }}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="16x16" href="{{site.baseurl}}/images/icons/Clever_Owl_16x16.png">
+    <link rel="icon" sizes="32x32" href="{{site.baseurl}}/images/icons/Clever_Owl_32x32.png">
+    <link rel="icon" sizes="48x48" href="{{site.baseurl}}/images/icons/Clever_Owl_48x48.png">
+    <link rel="icon" sizes="64x64" href="{{site.baseurl}}/images/icons/Clever_Owl_64x64.png">
+    <link rel="icon" sizes="128x128" href="{{site.baseurl}}/images/icons/Clever_Owl_128x128.png">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css" />
+    <link rel="canonical" href="{{ page.url | replace:'/index.html','/' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} Feed" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/home.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/themes.dark.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/dense.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/scrollreveal.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/main.js"></script>
+</head>
+<body>
+    <nav id="top" class="site-navigation">
+        <div class="inner">
+            <button id="menu-toggle" aria-expanded="false">Menu</button>
+            {% assign psize = site.posts | size %}
+            <div class="nav-menu">
+                <ul class="menu">
+                {% if psize == 0 %}
+                    <li class="nav-current">
+                        <a class="nav-current" href="{{ site.navigation[0].url }}">{{ site.navigation[0].text }}</a>
+                    </li>
+                {% else %}
+                    {% for link in site.navigation %}
+                        {% assign current = nil %}
+                        {% if page.url == link.url %}
+                            {% assign current = 'nav-current' %}
+                        {% endif %}
+                        <li class="{{ current }}">
+                            <a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a>
+                        </li>
+                    {% endfor %}
+                {% endif %}
+                </ul>
+            </div><!-- .nav-menu -->
+            {% if psize != 0 %}
+            <a class="subscribe-button fa-feed square fill-horizontal" href="{{site.baseurl}}/feed.xml">
+                <span class="screen-reader-text">Subscribe</span>
+            </a>
+            {% endif %}
+        </div><!-- .inner -->
+    </nav><!-- .site-navigation -->
+    {% if page.url != '/' %}
+        <header class="site-header"></header>
+    {% endif %}
+    {{content}}
+    {% if page.url != '/' %}
+        {% include footer.html %}
+    {% endif %}
+    <script type="text/javascript" src="{{ site.baseurl }}/js/plugins.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/js/custom.js"></script>
+</body>
+</html>

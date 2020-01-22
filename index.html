@@ -1,0 +1,355 @@
+---
+layout: default
+---
+<div class="c-preloader  js-preloader">
+    <div class="c-preloader__spinner  t-preloader__spinner"></div>
+</div>
+<div class="c-main-container  js-main-container">
+    <section class="o-section o-section--header  t-section  t-section--header">
+        <div class="c-header">
+            <div class="o-section__header-bg  t-section__header"></div>
+            <div class="o-section__content-bg  t-section__content"></div>
+            <div class="o-container">
+                <div class="o-section__container">
+                    <header class="o-section__header  c-header__header  t-section__header">
+                        <div class="c-header__inner-header">
+                            <div class="c-header__avatar">
+                                <div class="a-header  c-avatar">
+                                    <img class="c-avatar__img" src="{{ site.baseurl }}/images/author.jpg" alt="">
+                                </div><!-- /c-avatar -->
+                            </div><!-- /c-header-avatar -->
+                        </div><!-- /c-header__inner-header -->
+                    </header><!-- /o-section__header -->
+                    <div class="o-section__content  c-header__content  t-section__content">
+                        <div class="c-header__inner-content">
+                            <div class="c-header__top">
+                                <div class="c-header__brand">
+                                    <div class="c-brand">
+                                        <h1 class="c-brand__title  t-title">
+                                            <span class="c-brand__sizer">
+                                                <span class="a-header  c-brand__first-word  t-title__first-word">
+                                                    Itskov
+                                                </span>
+                                                <span class="a-header  c-brand__second-word  t-title__second-word">
+                                                    Konstantin
+                                                </span>
+                                            </span>
+                                        </h1>
+                                        <h2 class="a-header  c-brand__sub-title  t-sub-title">
+                                            <span class="c-brand__sizer">Computer Scientist &amp; Software Engineer</span>
+                                        </h2>
+                                    </div><!-- /c-brand -->
+                                </div><!-- /c-header__brand -->
+                                <ul class="c-header__social-buttons  c-social-buttons">
+                                    <li class="a-header">
+                                        <a href="https://www.facebook.com/konstantin.itskov" target="_blank" class="square square-sm fill-horizontal">
+                                            <i class="fa-lg  fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="a-header">
+                                        <a href="https://github.com/trivigy" target="_blank" class="square square-sm fill-horizontal">
+                                            <i class="fa-lg  fa-github-alt"></i>
+                                        </a>
+                                    </li>
+                                    <li class="a-header">
+                                        <a href="https://www.linkedin.com/in/konstantinitskov/" target="_blank" class="square square-sm fill-horizontal">
+                                            <i class="fa-lg  fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                </ul><!-- /c-header__social-buttons -->
+                            </div><!-- /c-header__top -->
+                            <div class="c-header__contact">
+                                <hr class="a-header  c-header__contact-divider"/>
+                                <div class="o-grid">
+                                    <div class="o-grid__col-md-4  o-grid__col-sm-6">
+                                        <div class="a-header  o-content">
+                                            <div class="o-content__body">
+                                                <h4>Location</h4>
+                                                <address>{{ site.author.address }}</address>
+                                            </div>
+                                        </div><!-- /o-content -->
+                                    </div><!-- /o-grid__col -->
+                                    <div class="o-grid__col-md-4  o-grid__col-sm-6">
+                                        <div class="a-header  o-content">
+                                            <div class="o-content__body">
+                                                <a href="https://kovits.com" target="_blank" class="t-link-container">
+                                                    <h4>Web</h4>
+                                                    <p>
+                                                        <span class="t-link-container__item--blended">{{ site.title }}</span>
+                                                    </p>
+                                                </a><!-- /o-link-container -->
+                                            </div>
+                                        </div><!-- /o-content -->
+                                    </div><!-- /o-grid__col -->
+                                    <div class="o-grid__col-md-4  o-grid__col-sm-12">
+                                        <div class="a-header  o-content">
+                                            <div class="o-content__body">
+                                                <a href="mailto:konstantin.itskov@kovits.com" target="_blank" class="t-link-container">
+                                                    <h4>Email</h4>
+                                                    <p>
+                                                        <span class="t-link-container__item--blended">{{ site.author.email }}</span>
+                                                    </p>
+                                                </a><!-- /o-link-container -->
+                                            </div>
+                                        </div><!-- /o-content -->
+                                    </div><!-- /o-grid__col -->
+                                </div><!-- /o-grid -->
+                            </div><!-- /c-header__contact -->
+                        </div><!-- /c-header__inner-content -->
+                    </div><!-- /o-section__content -->
+                </div><!-- /o-section__container -->
+            </div><!-- /o-container -->
+        </div><!-- /c-header -->
+    </section><!-- /o-section -->
+    <section class="o-section  t-section  ">
+        <div class="o-section__header-bg  t-section__header"></div>
+        <div class="o-section__content-bg  t-section__content"></div>
+        <div class="o-container">
+            <div class="o-section__container">
+                <header class="o-section__header  t-section__header">
+                    <div class="o-content">
+                        <h2 class="o-section__heading">Intro</h2>
+                        <div class="o-content__body  o-section__description">This is my story.</div>
+                    </div>
+                </header><!-- /o-section__header -->
+                <div class="o-section__content  t-section__content  ">
+                    <div class="o-content">
+                        <div class="c-intro">
+                            <div class="o-content__body">
+                                {% assign paragraphs = site.author.biography | split: "\n" %}
+                                {% for paragraph in paragraphs %}
+                                    <p>{{ paragraph }}</p>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /o-section__content -->
+            </div><!-- /o-section__container -->
+        </div><!-- /o-container -->
+    </section><!-- /o-section -->
+    <section class="o-section  t-section  ">
+        <div class="o-section__header-bg  t-section__header"></div>
+        <div class="o-section__content-bg  t-section__content"></div>
+        <div class="o-container">
+            <div class="o-section__container">
+                <header class="o-section__header  t-section__header">
+                    <div class="o-content">
+                        <h2 class="o-section__heading">Skills</h2>
+                        <div class="o-content__body  o-section__description">Relative to everyone else.</div>
+                    </div>
+                </header><!-- /o-section__header -->
+                <div class="o-section__content  t-section__content  ">
+                    <div class="o-grid">
+                        {% for skill in site.skills %}
+                        <div class="o-grid__col-sm-6">
+                            <div class="o-content">
+                                <div class="o-media  o-media--block">
+                                    <div class="o-media__figure">
+                                        <div class="c-number  t-primary-color">
+                                            {{ skill.percent }}
+                                            <small>%</small>
+                                        </div>
+                                    </div>
+                                    <div class="o-media__body">
+                                        <h3>{{ skill.name }}</h3>
+                                    </div>
+                                </div>
+                                <div class="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text">
+                                    <div class="a-progress-bar  c-progress-bar__filler  t-primary-bg" data-percent="{{ skill.percent }}"></div>
+                                </div>
+                            </div>
+                        </div><!-- /o-grid__col -->
+                        {% endfor %}
+                    </div><!-- /o-grid -->
+                </div><!-- /o-section__content -->
+            </div><!-- /o-section__container -->
+        </div><!-- /o-container -->
+    </section><!-- /o-section -->
+    <section class="o-section  t-section  ">
+        <div class="o-section__header-bg  t-section__header"></div>
+        <div class="o-section__content-bg  t-section__content"></div>
+        <div class="o-container">
+            <div class="o-section__container">
+                <header class="o-section__header  t-section__header">
+                    <div class="o-content">
+                        <h2 class="o-section__heading">Experience</h2>
+                        <div class="o-content__body  o-section__description">Yes. I&#39;ve been around.</div>
+                    </div>
+                </header><!-- /o-section__header -->
+                <div class="o-section__content  t-section__content  u-pb-0">
+                    <div class="a-experience-timeline  c-timeline  t-border-color">
+                        {% for job in site.jobs %}
+                        <div class="c-timeline__item">
+                            <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
+                            <div class="o-content">
+                                <div class="o-grid">
+                                    <div class="o-grid__col-md-5">
+                                        <div class="c-work__timeframe">{{ job.timeframe }}</div>
+                                        <h3 class="c-work__heading">{{ job.company }}</h3>
+                                        <h4 class="c-work__title">{{ job.position }}</h4>
+                                        <div class="c-work__location">{{ job.location }}</div>
+                                    </div>
+                                    <div class="o-grid__col-md-7">
+                                        <p>{{ job.description }}</p>
+                                    </div>
+                                </div><!-- /o-grid -->
+                            </div><!-- /o-content -->
+                        </div><!-- /c-timeline__item -->
+                        {% endfor %}
+                    </div><!-- /c-timeline -->
+                </div><!-- /o-section__content -->
+            </div><!-- /o-section__container -->
+        </div><!-- /o-container -->
+    </section><!-- /o-section -->
+    <section class="o-section  t-section  ">
+        <div class="o-section__header-bg  t-section__header"></div>
+        <div class="o-section__content-bg  t-section__content"></div>
+        <div class="o-container">
+            <div class="o-section__container">
+                <header class="o-section__header  t-section__header">
+                    <div class="o-content">
+                        <h2 class="o-section__heading">Education</h2>
+                        <div class="o-content__body  o-section__description">I live for knowledge.</div>
+                    </div>
+                </header><!-- /o-section__header -->
+                <div class="o-section__content  t-section__content  u-pt-0">
+                    <div class="o-content">
+                        <div class="a-education-timeline  c-timeline  t-border-color  o-section__full-top-space">
+                            <div class="c-timeline__end  t-border-color"></div>
+                            {% for school in site.schools %}
+                            <div class="c-timeline__item">
+                                <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
+                                <div class="o-content">
+                                    <div class="o-grid">
+                                        <div class="o-grid__col-md-5">
+                                            <div class="c-work__timeframe">{{ school.timeframe }}</div>
+                                            <h3 class="c-work__heading">{{ school.company }}</h3>
+                                            <h4 class="c-work__title">{{ school.position }}</h4>
+                                            <div class="c-work__location">{{ school.location }}</div>
+                                        </div>
+                                        <div class="o-grid__col-md-7">
+                                            <p>{{ school.description }}</p>
+                                        </div>
+                                    </div><!-- /o-grid -->
+                                </div><!-- /o-content -->
+                            </div><!-- /c-timeline__item -->
+                            {% endfor %}
+                        </div><!-- /c-timeline -->
+                    </div><!-- /o-content -->
+                </div><!-- /o-section__content -->
+            </div><!-- /o-section__container -->
+        </div><!-- /o-container -->
+    </section><!-- /o-section -->
+    <section class="o-section  t-section  ">
+        <div class="o-section__header-bg  t-section__header"></div>
+        <div class="o-section__content-bg  t-section__content"></div>
+        <div class="o-container">
+            <div class="o-section__container">
+                <header class="o-section__header  t-section__header">
+                    <div class="o-content">
+                        <h2 class="o-section__heading">Projects</h2>
+                        <div class="o-content__body  o-section__description">These are interesting.</div>
+                    </div>
+                </header><!-- /o-section__header -->
+                <div class="o-section__content  t-section__content  ">
+                    <div class="o-grid">
+                        {% for project in site.projects %}
+                        <div class="o-grid__col-xl-4  o-grid__col-sm-6">
+                            <div class="o-content">
+                                <a href="{{ project.link }}" target="_blank" class="t-link-container">
+                                    <div class="o-media  o-media--block">
+                                        <div class="o-media__figure">
+                                            <div class="c-profile__icon">
+                                                <i class="fa  fa-lg  fa-github-alt"></i>
+                                            </div>
+                                        </div>
+                                        <div class="o-media__body  o-content__body">
+                                            <h3 class="t-link-container__item">{{ project.name }}</h3>
+                                            <p>{{ project.description }}</p>
+                                        </div>
+                                    </div><!-- /o-media -->
+                                </a><!-- /t-link-container -->
+                            </div><!-- /o-content -->
+                        </div><!-- /o-grid__col -->
+                        {% endfor %}
+                    </div><!-- /o-grid -->
+                </div><!-- /o-section__content -->
+            </div><!-- /o-section__container -->
+        </div><!-- /o-container -->
+    </section><!-- /o-section -->
+    <section class="o-section  t-section  o-section--footer">
+        <div class="o-section__header-bg  t-section__header"></div>
+        <div class="o-section__content-bg  t-section__content"></div>
+        <div class="o-container">
+            <div class="o-section__container">
+                <header class="o-section__header  t-section__header">
+                    <div class="o-content">
+                        <h2 class="o-section__heading">
+                            Contact
+                        </h2>
+                    </div>
+                </header><!-- /o-section__header -->
+                <div class="o-section__content  t-section__content  ">
+                    <div class="c-footer__contact">
+                        <div class="o-grid">
+                            <div class="o-grid__col-md-4  o-grid__col-sm-6">
+                                <div class="o-content">
+                                    <div class="o-content__body">
+                                        <h4>Location</h4>
+                                        <address>{{ site.author.address }}</address>
+                                    </div>
+                                </div><!-- /o-content -->
+                            </div><!-- /o-grid__col -->
+                            <div class="o-grid__col-md-4  o-grid__col-sm-6">
+                                <div class="o-content">
+                                    <div class="o-content__body">
+                                        <a href="https://kovits.com" target="_blank" class="t-link-container">
+                                            <h4>Web</h4>
+                                            <p>
+                                                <span class="t-link-container__item--blended">{{ site.title }}</span>
+                                            </p>
+                                        </a><!-- /o-link-container -->
+                                    </div>
+                                </div><!-- /o-content -->
+                            </div><!-- /o-grid__col -->
+                            <div class="o-grid__col-md-4  o-grid__col-sm-12">
+                                <div class="o-content">
+                                    <div class="o-content__body">
+                                        <a href="mailto:konstantin.itskov@kovits.com" target="_blank" class="t-link-container">
+                                            <h4>Email</h4>
+                                            <p>
+                                                <span class="t-link-container__item--blended">{{ site.author.email }}</span>
+                                            </p>
+                                        </a><!-- /o-link-container -->
+                                    </div>
+                                </div><!-- /o-content -->
+                            </div><!-- /o-grid__col -->
+                        </div><!-- /o-grid -->
+                    </div><!-- /c-footer__contact -->
+                    <hr class="c-footer__contact-divider"/>
+                    <div class="o-content">
+                        <div class="c-footer__bottom">
+                            <div class="c-footer__brand">
+
+                                <div class="c-brand">
+                                    <div class="o-content__body">
+                                        <h1 class="c-brand__title  t-title">
+                                            <span class="c-brand__sizer  c-brand__sizer--sm">
+                                                <span class="a-footer  c-brand__first-word  t-title__first-word">
+                                                    Itskov
+                                                </span>
+                                                <span class="a-footer  c-brand__second-word  t-title__second-word">
+                                                    Konstantin
+                                                </span>
+                                            </span>
+                                        </h1>
+                                    </div><!-- /o-content__body -->
+                                </div><!-- /c-brand -->
+                            </div><!-- /c-footer__brand -->
+                        </div><!-- /c-footer__bottom -->
+                    </div><!-- /o-content -->
+                </div><!-- /o-section__content -->
+            </div><!-- /o-section__container -->
+        </div><!-- /o-container -->
+    </section><!-- /o-section -->
+</div><!-- /c-main-container -->

@@ -1,0 +1,13 @@
+### IDE ###
+###########
+.idea/
+
+### Folders ###
+#############
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+### Files ###
+#############
