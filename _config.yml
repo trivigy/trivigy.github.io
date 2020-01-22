@@ -66,15 +66,15 @@ skills:
     percent: 99
   - name: Javascript
     percent: 75
-  - name: CSS
+  - name: Css
     percent: 85
-  - name: SCSS
+  - name: Scss
     percent: 70
   - name: Linux
     percent: 85
   - name: Java
     percent: 60
-  - name: ocaml
+  - name: OCaml
     percent: 20
   - name: JetBrains
     percent: 90
@@ -90,11 +90,11 @@ skills:
     percent: 45
   - name: Lua
     percent: 30
-  - name: sqlite
+  - name: SqLite
     percent: 65
-  - name: cayley
+  - name: Cayley
     percent: 85
-  - name: etcd
+  - name: Etcd
     percent: 60
 
 projects:

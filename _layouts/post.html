@@ -3,19 +3,14 @@ layout: default
 ---
 <div class="site-content">
     <div class="inner">
-        <main class="site-main">
+        <main class="site-main site-post">
             <article class="post">
                 <header class="entry-header"> 
                     <div class="entry-header-wrap">
-                        {% if page.banner_image %}
-                        <div class="post-thumbnail">
-                            <img src="{{ "/images/posts/" | append: page.banner_image | prepend: site.baseurl }}" alt="{% if page.banner_image_alt %}{{ page.banner_image_alt }}{% else %}{{ page.title }}{% endif %}">
-                        </div><!-- .post-thumbnail -->
-                        {% endif %}
-                        <h1 class="entry-title">{{page.title}}</h1>
+                        <h1 class="entry-title">{{ page.title }}</h1>
                     </div><!-- .entry-header-wrap -->
                     <div class="entry-meta">
-                        by <span class="post-author">{{site.author_name}}</span> on <time class="published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+                        <time class="published" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %-d, %Y" }}</time>
                     </div><!-- .entry-meta -->
                 </header><!-- .entry-header -->
                 <div class="entry-content">
@@ -35,14 +30,33 @@ layout: default
                     {% endif %}
                 </footer><!-- .entry-footer -->
             </article><!-- .post -->
+            <div class="author-box">
+                <div class="author-info">
+                    <h2 class="author-title">{{ site.author.name }}</h2>
+                    <ul class="author-social">
+                        <li class="a-header">
+                            <a href="https://www.facebook.com/konstantin.itskov" target="_blank" class="square square-sm fill-horizontal">
+                                <i class="fa-lg  fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="a-header">
+                            <a href="https://github.com/trivigy" target="_blank" class="square square-sm fill-horizontal">
+                                <i class="fa-lg  fa-github-alt"></i>
+                            </a>
+                        </li>
+                        <li class="a-header">
+                            <a href="https://www.linkedin.com/in/konstantinitskov/" target="_blank" class="square square-sm fill-horizontal">
+                                <i class="fa-lg  fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- .author-info -->
+            </div><!-- .author-box -->
             <nav class="post-navigation">
                 <h2 class="screen-reader-text">Post navigation</h2>
                 {% if page.previous.url %}
                 <div class="nav-previous">
                     <div class="nav-inside">
-                        {% if page.previous.banner_image %}
-                        <a href="{{ site.baseurl }}{{page.previous.url}}" class="nav-thumb" style="background-image: url({{ "/images/posts/" | append: page.previous.banner_image }})"></a>
-                        {% endif %}
                         <div class="nav-before">Previous</div>
                         <div class="nav-title"><a href="{{ site.baseurl }}{{page.previous.url}}">{{page.previous.title}}</a></div>
                         <div class="nav-date">{{page.previous.date | date: "%B %-d, %Y"}}</div>
@@ -52,9 +66,9 @@ layout: default
                 {% if page.next.url %}
                 <div class="nav-next">
                     <div class="nav-inside">
-                        {% if page.next.banner_image %}
-                        <a href="{{ site.baseurl }}{{page.next.url}}" class="nav-thumb" style="background-image: url({{ "/images/posts/" | append: page.next.banner_image }})"></a>
-                        {% endif %}
+<!--                        {% if page.next.banner_image %}-->
+<!--                        <a href="{{ site.baseurl }}{{page.next.url}}" class="nav-thumb" style="background-image: url({{ "/images/posts/" | append: page.next.banner_image }})"></a>-->
+<!--                        {% endif %}-->
                         <div class="nav-before">Next</div>
                         <div class="nav-title"><a href="{{ site.baseurl }}{{page.next.url}}">{{page.next.title}}</a></div>
                         <div class="nav-date">{{page.next.date | date: "%B %-d, %Y"}}</div>
@@ -63,6 +77,5 @@ layout: default
                 {% endif %}
             </nav><!-- .post-navigation -->
         </main><!-- .site-main -->
-        {% include sidebar.html %}
     </div><!-- .inner -->
 </div><!-- .site-content -->

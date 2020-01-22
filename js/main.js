@@ -1,7 +1,6 @@
 $(document).ready(function () {
     $('html').addClass('js-enabled');
 
-    setup_nivo_lightbox();
     setup_dense();
 
     $(window).on('load', function () {
@@ -15,19 +14,19 @@ $(document).ready(function () {
 });
 
 function setup_progress_bar_animation() {
-    var $animation_elements = $("[class*='a-']");
-    var $window = $(window);
+    let $animation_elements = $("[class*='a-']");
+    let $window = $(window);
 
     $window.on('scroll resize', function () {
-        var window_height = $window.height();
-        var window_top_position = $window.scrollTop();
-        var window_bottom_position = (window_top_position + window_height);
+        let window_height = $window.height();
+        let window_top_position = $window.scrollTop();
+        let window_bottom_position = (window_top_position + window_height);
 
         $.each($animation_elements, function () {
-            var $element = $(this);
-            var element_height = $element.outerHeight();
-            var element_top_position = $element.offset().top;
-            var element_bottom_position = (element_top_position + element_height);
+            let $element = $(this);
+            let element_height = $element.outerHeight();
+            let element_top_position = $element.offset().top;
+            let element_bottom_position = (element_top_position + element_height);
 
             // Check to see if this current container is within viewport
             if ((element_bottom_position >= window_top_position) &&
@@ -60,18 +59,18 @@ function setup_scrollreveal() {
 
         window.sr = ScrollReveal();
 
-        var default_config = {
+        let default_config = {
             duration: 500,
             delay: 0,
             easing: 'ease',
             scale: 1,
             mobile: false
         };
-        var header_config = $.extend(false, default_config, {
+        let header_config = $.extend(false, default_config, {
             duration: 1200,
             delay: 700
         });
-        var footer_config = $.extend(false, default_config, {
+        let footer_config = $.extend(false, default_config, {
             duration: 1500,
             distance: 0,
             viewOffset: {top: 0, right: 0, bottom: 100, left: 0}
@@ -84,49 +83,4 @@ function setup_scrollreveal() {
 
     }
 
-}
-
-function setup_nivo_lightbox() {
-    if ($.isFunction($.fn.nivoLightbox)) {
-        var $selector = $('.js-lightbox');
-
-        // Hide all titles to prevent tooltip from showing
-        $selector.each(function () {
-            var title = $(this).attr('title');
-            $(this).attr('data-title', title);
-            $(this).attr('title', '');
-        });
-
-        // On click, add titles back, so lightbox can display them
-        $selector.click(function () {
-            $selector.each(function () {
-                var title = $(this).attr('data-title');
-                $(this).attr('title', title);
-            });
-        });
-
-        $selector.nivoLightbox({
-            effect: 'fade',                               // The effect to use when showing the lightbox
-            theme: 'default',                             // The lightbox theme to use
-            keyboardNav: true,                            // Enable/Disable keyboard navigation (left/right/escape)
-            clickOverlayToClose: true,                    // If false clicking the "close" button will be the only way to close the lightbox
-            onInit: function () {
-            },
-            beforeShowLightbox: function () {
-            },
-            afterShowLightbox: function (lightbox) {
-            },
-            beforeHideLightbox: function () {
-            },
-            onPrev: function (element) {
-            },
-            onNext: function (element) {
-            },
-            afterHideLightbox: function () {
-                $selector.attr('title', '');
-            },
-            errorMessage: 'The requested content cannot be loaded. Please try again later.' // Error message when content can't be loaded
-        });
-
-    }
 }
