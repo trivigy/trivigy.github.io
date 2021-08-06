@@ -47,7 +47,7 @@ author:
 
 skills:
   - name: Rust
-    percent: 65
+    percent: 85
   - name: Assembly
     percent: 60
   - name: TypeScript
@@ -96,6 +96,14 @@ skills:
     percent: 85
   - name: Etcd
     percent: 60
+  - name: WebRTC
+    percent: 70
+  - name: RDF
+    percent: 99
+  - name: Kubernetes
+    percent: 75
+  - name: Docker
+    percent: 75
 
 projects:
   - name: multiset
@@ -142,12 +150,12 @@ jobs:
     timeframe: 2018 - Present
     description: >-
       Founded early stage company concentrating on real-time streaming and
-      communication infrastructural technology. Powering tax specific, distributed 
-      via browsers based peer to peer streaming, knowledge and records graph.
+      communication infrastructural technology. Supporting by distributed 
+      peer to peer knowledge graph streaming database.
   - company: DigiContract Intelligence LLC
     position: Co-Founder & Chief Technical Officer
     location: New York, NY
-    timeframe: 2018 - Present
+    timeframe: 2018 - 2021
     description: >-
       Joined an early stage startup concentrating on digitizing legal documents.
       Leading research and development into a graph theory specializing in a
