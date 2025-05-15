@@ -1,12 +1,9 @@
 title: "kovits.com"
-description: "BlogInn is a bold theme for the Jekyll blogging platform. Available for purchase at ThemeForest.net."
 
 baseurl:
 
 sass:
   sass_dir: _sass
-
-url: "http://justgoodthemes.com"
 
 navigation:
   - text: Home
@@ -18,32 +15,8 @@ navigation:
 
 author:
   name: Konstantin Itskov
-  email: costa at kovits com
+  email: konstantin dot itskov at kovits com
   address: New York, NY
-  biography: >-
-    Ever since I was young I have always been interested in science and technology.
-    At the age of nine my mother bought our first family computer and with it came
-    a whole new world of fascination. After receiving my first computer at the age
-    of nine, I taught myself how to take apart the hard drive and swap the memory
-    cards. By the time I was eleven, I had already upgraded my computer several
-    times by trading parts with other computer-savvy friends. I then attended a
-    specialized high school for computer science and I participated in an after-school
-    IT program. I taught myself everything from C++ and flash action script to
-    matrix and vector mathematics while learning Pascal, Assembler and html at
-    school. At the age of 15, I made my first server-client communication software
-    and started working on a 3-D game engine.\n
-
-    My life then took a turn and I was drafted into the Israeli military. After
-    serving for almost three and a half years I was finally discharged with honors
-    and was ready to conquer the world when, by sheer luck, I met my beautiful wife.
-    Following several years together of life in Israel, I then decided to follow my
-    dream of becoming a professional software engineer and, together with my wife,
-    move to New York city to pursue this goal. While attending school at Columbia University,
-    I started a tech startup with a friend and have then successfully grown it to
-    serve millions of HTTP requests a day and a company of over ten fulltime employees.
-    In the process, I never gave up on my dream of earning a degree in computer
-    science and eventually graduated magna cum laude, the second highest distinction
-    a student can get.
 
 skills:
   - name: Rust
